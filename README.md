@@ -102,6 +102,3 @@ python3 fetch_freq_OHLCV.py
 ## License
 
 MIT
-
-
-![worker](https://user-images.githubusercontent.com/69221715/130700213-97fdd92a-8f38-4c4d-81b0-8d0a3fe6493d.jpg)
