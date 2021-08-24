@@ -26,6 +26,7 @@ cd kthulu-fetch;
 
 
 **Windows**:
+
 1.) Install via freqtrade docs: 
 https://www.freqtrade.io/en/stable/windows_installation/
 
