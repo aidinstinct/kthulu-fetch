@@ -48,19 +48,23 @@ https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historica
 mkdir ~/freqtrade/user_data/data/kraken_csv
 ```
 4.) Create a tmp folder or modify the code to use an existing one:
+
 **Option1**:
 ```sh
 mkdir ~/freqtrade/user_data/data/tmp
 ```
+
 **Option2 => Use current tmp**:
 **Line 22 of**: 
 ```sh
 ~/freqtrade/user_data/data/fetch_freq_OHLCV.py
 ```
+
 **Modify:**
 ```sh
 'fetch_freq_json' : f'cd {thisdir}/kraken_csv/avengers; sed -i "s/e/E/g" {file}; cut -d"," -f -6 {file} > {thisdir}/tmp/output_{file}',
 ```
+
 **to**:
 ```sh
 'fetch_freq_json' : f'cd {thisdir}/kraken_csv/avengers; sed -i "s/e/E/g" {file}; cut -d"," -f -6 {file} > your_tmp_directory/output_{file}',
@@ -72,6 +76,7 @@ Its a good idea to monitor your machines performance for this operation:
 sudo apt install htop
 htop
 ```
+
 ## Use
 You might want to use sudo and/or augment the permissions of your freqtrade directory:
 Directory permissions:
@@ -82,12 +87,11 @@ Configure Line 106 of for your DB instance :
 ```sh
 ~/freqtrade/user_data/data/export_to_freq.py
 ```
-2.)
+
+Then :
 ```sh
 python3 fetch_freq_OHLCV.py
 ```
-
-
 
 ## License
 
