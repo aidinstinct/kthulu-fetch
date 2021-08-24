@@ -55,6 +55,7 @@ mkdir ~/freqtrade/user_data/data/tmp
 ```
 
 **Option2 => Use current tmp**:
+
 **Line 22 of**: 
 ```sh
 ~/freqtrade/user_data/data/fetch_freq_OHLCV.py
@@ -79,16 +80,21 @@ htop
 
 ## Use
 You might want to use sudo and/or augment the permissions of your freqtrade directory:
+
 Directory permissions:
+
 ```sh
 sudo chown $USER:USER ./freqtrade
 ```
+
 Configure Line 106 of for your DB instance : 
+
 ```sh
 ~/freqtrade/user_data/data/export_to_freq.py
 ```
 
 Then :
+
 ```sh
 python3 fetch_freq_OHLCV.py
 ```
