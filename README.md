@@ -12,16 +12,15 @@ The Kraken API seems to be causing issues when retrieving OHLCV data and the dow
 - see: https://www.freqtrade.io/en/stable/exchanges/#historic-kraken-data
 
 ## Solution
-Kthulu-fetch leverages python3 to convert the archive obtained from krakens official website and stores it in the freqtrade read-in directory and mongoDB.
+Kthulu-fetch leverages python3 to convert the archive obtained from krakens official website and stores it in the freqtrade read-in directory and mongoDB. 
 
 ## Installation
 
 **Linux + MacOS**:
 ```sh
-git clone https://github.com/SeanKnig/kthulu-fetch.git
-cd kthulu-fetch;
-./setup.sh -i
-./fetch-kraken-archive.sh -f; 
+git clone https://github.com/SeanKnig/freqtrade.git
+cd freqtrade;
+./setup.sh -k
 ```
 
 
