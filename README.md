@@ -38,7 +38,7 @@ get_coins = ['XBT', 'ETH', 'ADA', 'MLN', 'EWT', 'AAVE', 'ALGO', 'ATOM', 'BCH', '
 
 **Linux + MacOS**:
 ```sh
-git clone https://github.com/SeanKnig/freqtrade.git
+git clone https://github.com/SeanKnig/kthulutrade.git
 cd freqtrade;
 ./setup.sh -k
 ```
@@ -127,7 +127,7 @@ If the environment allows it, the terminal should return:
 ![alt text](converting.png "convert")
 
 
-There is a nifty function at the root of the forked freqtrade directory called genTrainingSet.py:
+There is a nifty function at the root of the cloned freqtrade directory called genTrainingSet.py:
 
 ```sh
 python3 genTrainingSet.py
