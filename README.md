@@ -12,15 +12,26 @@ The Kraken API seems to be causing issues when retrieving OHLCV data and the dow
 - see: https://www.freqtrade.io/en/stable/exchanges/#historic-kraken-data
 
 ## Solution
-Kthulu-fetch leverages python3 to convert the archive obtained from krakens official website and stores it in the freqtrade read-in directory and mongoDB. 
+Kthulu-fetch leverages python3 to convert the archive obtained from krakens official website and stores it in the freqtrade read-in directory and mongoDB.
 
 ## Installation
+**Choose the coins you want to use freqtrade with**
+Line 9 contains the get_coins conversion list: 
+
+```sh
+~/freqtrade/user_data/data/fetch_freq_OHLCV.py
+```
+example:
+```python
+    get_coins = ['XBT', 'ETH', 'ADA', 'MLN', 'EWT', 'AAVE', 'ALGO', 'ATOM', 'BCH', 'EOS', 'ETC', 'KAVA', 'KSM', 'LINK', 'LTC', 'MANA', 'MLN', 'QTUM', 'STORJ', 'WAVES', 'XTZ', 'USDT']
+```
 
 **Linux + MacOS**:
 ```sh
-git clone https://github.com/SeanKnig/freqtrade.git
-cd freqtrade;
-./setup.sh -k
+git clone https://github.com/SeanKnig/kthulu-fetch.git
+cd kthulu-fetch;
+./setup.sh -i
+./fetch-kraken-archive.sh -f; 
 ```
 
 
