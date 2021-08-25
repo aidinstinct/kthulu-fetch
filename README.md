@@ -62,6 +62,7 @@ https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historica
 3.) Make required folders and extract the OHLCV data to kraken_csv/all:
 
 ```sh
+mkdir ~/freqtrade/user_data/data/kraken
 mkdir ~/freqtrade/user_data/data/kraken_csv
 mkdir ~/freqtrade/user_data/data/kraken_csv/all
 mkdir ~/freqtrade/user_data/data/kraken_csv/avengers
