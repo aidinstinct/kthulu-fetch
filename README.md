@@ -127,7 +127,7 @@ There is a nifty function at the root of the forked freqtrade directory called g
 python3 genTrainingSet.py
 ```
 
-![alt text](train.png, "train")
+![alt text](train.png "train")
 
 Copy and paste a backtest:
 
@@ -135,11 +135,11 @@ Copy and paste a backtest:
 freqtrade backtesting --config configBTCUSDT.json -s Heracles --timerange=20191219- --dry-run-wallet 300 --timeframe 1h
 ```
 
-![alt text](example_backtest.png, "test")
+![alt text](example_backtest.png "test")
 
 Don't forget to check your mongodb!
 
-![alt text](mongoDB_Export.png, "db")
+![alt text](mongoDB_Export.png "db")
 
 ## License
 
