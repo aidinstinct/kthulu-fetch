@@ -122,6 +122,10 @@ Then :
 python3 fetch_freq_OHLCV.py
 ```
 
+If the environment allows it, ther terminal should return:
+![alt text](converting.png "convert")
+
+
 There is a nifty function at the root of the forked freqtrade directory called genTrainingSet.py:
 
 ```sh
