@@ -25,7 +25,7 @@ htop
 ```
 
 ## Installation
-**Choose the coins you want to use freqtrade with**
+**Choose the coins you want to fetch from Krakens archive**
 
 Line 9 contains the get_coins conversion list: 
 
