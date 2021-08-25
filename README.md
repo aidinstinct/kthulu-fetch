@@ -38,10 +38,9 @@ example:
 
 **Linux + MacOS**:
 ```sh
-git clone https://github.com/SeanKnig/kthulu-fetch.git
-cd kthulu-fetch;
-./setup.sh -i
-./fetch-kraken-archive.sh -f; 
+git clone https://github.com/SeanKnig/freqtrade.git
+cd freqtrade;
+./setup.sh -k
 ```
 
 
@@ -60,7 +59,7 @@ https://www.freqtrade.io/en/stable/installation/
 2.) Download Krakens public OHLCV data-set: 
 https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historical-OHLCVT-Open-High-Low-Close-Volume-Trades-data
 
-3.) Extract the OHLCV data to the following freqtrade directory:
+3.) Make required folders and extract the OHLCV data to kraken_csv/all:
 
 ```sh
 mkdir ~/freqtrade/user_data/data/kraken_csv
@@ -69,8 +68,9 @@ mkdir ~/freqtrade/user_data/data/kraken_csv/avengers
 ```
 
 ```sh
-~/freqtrade/user_data/data/kraken_csv
+~/freqtrade/user_data/data/kraken_csv/all
 ```
+
 4.) Create a tmp folder or modify the code to use an existing one:
 
 **Option1**:
@@ -86,7 +86,7 @@ mkdir ~/freqtrade/user_data/data/tmp
 ~/freqtrade/user_data/data/fetch_freq_OHLCV.py
 ```
 
-**Modify:**
+**Modify**
 
 ```sh
 'fetch_freq_json' : f'cd {thisdir}/kraken_csv/avengers; sed -i "s/e/E/g" {file}; cut -d"," -f -6 {file} > {thisdir}/tmp/output_{file}',
@@ -104,14 +104,16 @@ You might want to use sudo and/or augment the permissions of your freqtrade dire
 Directory permissions:
 
 ```sh
-sudo chown $USER:USER ./freqtrade
+sudo chown $USER:$USER ./freqtrade
 ```
 
-Configure Line 106 of for your DB instance : 
+Configure Line 106 of: 
 
 ```sh
 ~/freqtrade/user_data/data/export_to_freq.py
 ```
+
+for your DB instance 
 
 Then :
 
