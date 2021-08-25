@@ -121,6 +121,25 @@ Then :
 python3 fetch_freq_OHLCV.py
 ```
 
+There is a nifty function at the root of the forked freqtrade directory called genTrainingSet.py:
+
+```sh
+python3 genTrainingSet.py
+```
+
+![alt text](trainSet.png, "train")
+
+Copy and paste a backtest:
+
+```sh
+freqtrade backtesting --config configBTCUSDT.json -s Heracles --timerange=20191219- --dry-run-wallet 300 --timeframe 1h
+```
+
+![alt text](backtest.png, "test")
+
+Don't forget to check your mongodb!
+![alt text](mongodb.png, "db")
+
 ## License
 
 MIT
