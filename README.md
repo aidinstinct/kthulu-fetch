@@ -6,6 +6,7 @@ kthulu-fetch processes the OHLCV sets obtained from the kraken exchange and form
 ### Tech
 - freqtrade: https://github.com/freqtrade/freqtrade
 - kraken-exchange: https://www.kraken.com/en-us/features/
+- mongodb: https://www.mongodb.com/
 
 ### Issue
 The Kraken API seems to be causing issues when retrieving OHLCV data and the downloading convention differs from that of other exchanges.  Downloading OHLCV directly from the API is currently not supported. You first download the trades and convert it directly to candle-stick. Further, Krakens API rate-limit makes for an exceptionally slow establishment of big data.
