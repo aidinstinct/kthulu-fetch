@@ -6,14 +6,11 @@ kthulu-fetch processes the OHLCV sets obtained from the kraken exchange and form
 
 ### Quickstart Linux or MacOs
 
-- clone: https://github.com/freqtrade/freqtrade
-
 ```sh
+git clone https://github.com/SeanKnig/kthulutrade.git
 cd kthulutrade;
- ```
- 
-- initialize-kraken setup: ./setup.sh -k
-
+./setup.sh -k
+```
 
 
 ### Tech
