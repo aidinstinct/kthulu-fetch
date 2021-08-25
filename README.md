@@ -7,7 +7,7 @@ kthulu-fetch processes the OHLCV sets obtained from the kraken exchange and form
 ### Quickstart Linux or MacOs
 
 ```sh
-git clone https://github.com/SeanKnig/kthulutrade.git
+git clone https://github.com/saidkinstinct/kthulutrade.git
 cd kthulutrade;
 ./setup.sh -k
 ```
@@ -49,7 +49,7 @@ get_coins = ['XBT', 'ETH', 'ADA', 'MLN', 'EWT', 'AAVE', 'ALGO', 'ATOM', 'BCH', '
 
 **Linux + MacOS**:
 ```sh
-git clone https://github.com/SeanKnig/kthulutrade.git
+git clone https://github.com/saidkinstinct/kthulutrade.git
 cd freqtrade;
 ./setup.sh -k
 ```
