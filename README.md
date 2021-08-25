@@ -16,6 +16,7 @@ Kthulu-fetch leverages python3 to convert the archive obtained from krakens offi
 
 ## Installation
 **Choose the coins you want to use freqtrade with**
+
 Line 9 contains the get_coins conversion list: 
 
 ```sh
