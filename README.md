@@ -137,7 +137,7 @@ freqtrade backtesting --config configBTCUSDT.json -s Heracles --timerange=201912
 
 ![alt text](example_backtest.png "test")
 
-Don't forget to check your mongodb!
+MongoDB will store the data as a binary file as it exceeds the maximum file size.
 
 ![alt text](mongoDB_Export.png "db")
 
