@@ -4,6 +4,7 @@ import sys, os, asyncio, logging, re
 
 logging.basicConfig(filename='build_kraken_data.log', level=logging.DEBUG)
 
+#SKnight 2021 MIT
 async def build_kraken_data():
     thisdir = os.getcwd()
     get_coins = ['XBT', 'ETH', 'USDT']
