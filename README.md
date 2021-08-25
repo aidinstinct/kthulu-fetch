@@ -2,7 +2,7 @@
 
 ![alt text](worker.jpg "aidinstinct")
 
-Kthulu-fetch processes the OHLCV sets obtained from the kraken exchange and formats it for freqtrade. It is capable of exporting the formatted data to mongodb via GridFS for long-term storage and further data manipulation.
+kthulu-fetch processes the OHLCV sets obtained from the kraken exchange and formats it for freqtrade. It is capable of exporting the formatted data to mongodb via GridFS for long-term storage and further data manipulation.
 ### Tech
 - freqtrade: https://github.com/freqtrade/freqtrade
 - kraken-exchange: https://www.kraken.com/en-us/features/
