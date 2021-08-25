@@ -2,8 +2,6 @@
 import sys, os, glob, asyncio, pymongo, gridfs, json, re, pandas, logging
 from csv import reader
 
-#SKnight 2021 MIT
-
 #Get rid of scientific notation for freqtrade
 #Second unix timestamp => Millisecond
 
