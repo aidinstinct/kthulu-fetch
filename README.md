@@ -122,7 +122,8 @@ Then :
 python3 fetch_freq_OHLCV.py
 ```
 
-If the environment allows it, ther terminal should return:
+If the environment allows it, the terminal should return:
+
 ![alt text](converting.png "convert")
 
 
