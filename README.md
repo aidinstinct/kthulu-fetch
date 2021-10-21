@@ -158,6 +158,4 @@ MongoDB will store the data as a binary file as it exceeds the maximum file size
 
 ![alt text](mongoDB_Export.png "db")
 
-## License
 
-MIT
