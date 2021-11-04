@@ -1,5 +1,3 @@
-import os
-
 import sys, os, asyncio, logging, re
 
 logging.basicConfig(filename='build_kraken_data.log', level=logging.DEBUG)
