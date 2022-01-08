@@ -50,7 +50,7 @@ get_coins = ['XBT', 'ETH', 'ADA', 'MLN', 'EWT', 'AAVE', 'ALGO', 'ATOM', 'BCH', '
 **Linux + MacOS**:
 ```sh
 git clone https://github.com/saidkinstinct/kthulutrade.git
-cd freqtrade;
+cd kthulutrade;
 ./setup.sh -k
 ```
 
